@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import "./globals.css";
 
 export const metadata = {
@@ -14,7 +15,13 @@ export default function RootLayout({ children }) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Imdb clone application" name="description" />
       </head>
-      <body>{children}</body>
+      <body>
+
+        <Header />
+
+        {children}
+      
+      </body>
     </html>
   );
 }
