@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import "./globals.css";
+import Providers from "./Providers";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,11 +17,11 @@ export default function RootLayout({ children }) {
         <meta content="Imdb clone application" name="description" />
       </head>
       <body>
+        <Providers>
+          <Header />
 
-        <Header />
-
-        {children}
-      
+          {children}
+        </Providers>
       </body>
     </html>
   );
